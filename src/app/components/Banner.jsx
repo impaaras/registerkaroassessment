@@ -89,9 +89,9 @@ export default function Banner() {
       {/* Navigation */}
       <nav className="bg-white py-2 relative">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image src={Logo} alt="RegisterKaro" width={180} height={35} />
-          </div>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button

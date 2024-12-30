@@ -13,13 +13,11 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <main className="bg-gradient-to-br from-white to-gray-50 md:px-10 px-4">
+    <main className="bg-gradient-to-br from-[#FFF0DCAB] via-[#EDF6FFB2] to-[#E0EAF4] md:px-10 px-4">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column */}
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
           <div>
-            {/* Header with Rating */}
             <div className="flex items-center gap-2 mb-8">
               <Star className="w-5 h-5 text-yellow-400" />
               <span className="font-medium">Google Rating</span>
@@ -32,10 +30,11 @@ export default function HeroSection() {
                 ))}
               </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-              Your trusted partner
+            <h1 className="text-5xl sm:text-5xl font-bold leading-tight mb-6">
+              Your Trusted Partner
               <br />
-              for compliance business needs
+              For <span className="text-[#FFA229]">Compliance </span>
+              Needs
             </h1>
 
             <p className="text-gray-600 text-lg mb-8">
@@ -44,13 +43,11 @@ export default function HeroSection() {
               <span className="font-medium">registrations, tax filings</span>,
               and other <span className="font-medium">legal matters</span>.
             </p>
-
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mb-8">
               <div className="flex items-center gap-2">
                 <BarChart3 className="w-12 h-12 text-[#4F4F4F]" />
                 <div className="flex flex-col">
-                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] ">
+                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#1C4670] to-[#1C4670] ">
                     4.5+
                   </span>
                   <p className="text-sm text-gray-600">Customer Rating</p>
@@ -60,7 +57,7 @@ export default function HeroSection() {
               <div className="flex items-center gap-2">
                 <Users className="w-12 h-12 text-[#4F4F4F]" />
                 <div className="flex flex-col ">
-                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] ">
+                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#1C4670] to-[#1C4670] ">
                     20,000+
                   </span>
                   <p className="text-sm text-gray-600">Clients</p>
@@ -77,11 +74,9 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-
-            {/* CTA Buttons */}
             <div className="flex flex-wrap gap-6">
               <button className="bg-[#2B4162] text-white px-8 py-3 rounded-md hover:bg-blue-900 transition-colors">
-                Talk An Expert
+                Get Started For Free
               </button>
               <button className="flex items-center space-x-2 text-gray-700 hover:text-orange-500 transition-colors">
                 <PlayCircle

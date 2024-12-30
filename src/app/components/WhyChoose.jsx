@@ -29,8 +29,8 @@ export default function WhyChoose() {
         {/* Right Cards Grid Section */}
         <div className="space-y-6">
           {/* Top Row - 2 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-red-50 rounded-lg p-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <div className="bg-[#FEF4EF] rounded-lg p-6 border">
               <div className="flex justify-center mb-4">
                 <ShieldCheck className="w-12 h-12 text-orange-500" />
               </div>
@@ -41,7 +41,7 @@ export default function WhyChoose() {
                 All your private information is safe with us
               </p>
             </div>
-            <div className="bg-green-50 rounded-lg p-6">
+            <div className="bg-[#F1FBF3] rounded-lg p-6 border">
               <div className="flex justify-center mb-4">
                 <CheckCircle className="w-12 h-12 text-green-500" />
               </div>
@@ -59,7 +59,7 @@ export default function WhyChoose() {
       {/* Bottom Row - 3 cards */}
       <div className="flex justify-end ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 md:w-[74%]">
-          <div className="bg-blue-50 rounded-lg p-6">
+          <div className="bg-[#EDF3FF] rounded-lg p-6 border">
             <div className="flex justify-center mb-4">
               <Smile className="w-12 h-12 text-blue-500" />
             </div>
@@ -70,7 +70,7 @@ export default function WhyChoose() {
               We ensure that you stay 100% satisfied with our offered services
             </p>
           </div>
-          <div className="bg-red-50 rounded-lg p-6">
+          <div className="bg-[#FBF1FB] rounded-lg p-6 border">
             <div className="flex justify-center mb-4">
               <UserPlus className="w-12 h-12 text-red-500" />
             </div>
@@ -81,7 +81,7 @@ export default function WhyChoose() {
               Prompt support from our in-house expert professionals
             </p>
           </div>
-          <div className="bg-red-50 rounded-lg p-6">
+          <div className="bg-[#F7FCF9] rounded-lg p-6 border">
             <div className="flex justify-center mb-4">
               <ShieldCheck className="w-12 h-12 text-orange-500" />
             </div>

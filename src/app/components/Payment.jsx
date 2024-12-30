@@ -4,22 +4,22 @@ const steps = [
   {
     icon: FileText,
     title: "Fill up Application Form",
-    color: "bg-pink-100",
+    color: "bg-[#eb5757]",
   },
   {
     icon: CreditCard,
     title: "Make Online Payment",
-    color: "bg-green-100",
+    color: "bg-[#26AD60]",
   },
   {
     icon: UserCheck,
     title: "Executive will Process Application",
-    color: "bg-blue-100",
+    color: "bg-[#F2994A]",
   },
   {
     icon: Mail,
     title: "Get Confirm Mail",
-    color: "bg-gray-100",
+    color: "bg-[#828282]",
   },
 ];
 
@@ -31,7 +31,7 @@ export function Payment() {
           {steps.map((step, index) => (
             <div key={index} className="flex items-center gap-4">
               <div className={`${step.color} p-3 rounded-full`}>
-                <step.icon className="w-6 h-6" />
+                <step.icon className="w-6 h-6 text-white" />
               </div>
               <span className="font-medium">{step.title}</span>
             </div>

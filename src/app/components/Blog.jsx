@@ -76,7 +76,7 @@ export function BlogSection() {
           {blogPosts.map((post, index) => (
             <div
               key={index}
-              className="bg-white  overflow-hidden hover:shadow-lg transition-shadow"
+              className="bg-white overflow-hidden hover:shadow-lg  transition-shadow"
             >
               <img
                 src={post.image}

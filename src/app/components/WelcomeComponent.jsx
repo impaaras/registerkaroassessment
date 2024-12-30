@@ -15,7 +15,7 @@ export function WelcomeSection() {
   return (
     <section className="relative py-20 px-4">
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[#FFA229] to-[#1C4670]"
+        className="absolute inset-0 bg-gradient-to-r from-[#FFA229] via-[#1C4670] to-[#1C4670]"
         style={{ zIndex: -1 }}
       />
 

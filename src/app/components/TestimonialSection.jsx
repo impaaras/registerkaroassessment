@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import quotes from "../images/quotes.png";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -18,15 +20,33 @@ const testimonials = [
   },
   {
     text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident ea commodo consequat aute irure sint amet occaecat cupidatat non proident",
+    author: "John",
+    position: "Manager, TechCorp, UK",
+    rating: 4.0,
+  },
+  {
+    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident ea commodo consequat aute irure sint amet occaecat cupidatat non proident",
     author: "Sara",
     position: "Director, Innovate Inc, Canada",
     rating: 5.0,
   },
   {
     text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident ea commodo consequat aute irure sint amet occaecat cupidatat non proident",
+    author: "John",
+    position: "Manager, TechCorp, UK",
+    rating: 4.0,
+  },
+  {
+    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident ea commodo consequat aute irure sint amet occaecat cupidatat non proident",
     author: "Mike",
     position: "Founder, StartUpX, Germany",
     rating: 4.8,
+  },
+  {
+    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident ea commodo consequat aute irure sint amet occaecat cupidatat non proident",
+    author: "John",
+    position: "Manager, TechCorp, UK",
+    rating: 4.0,
   },
 ];
 
@@ -83,12 +103,13 @@ export default function TestimonialsSection() {
 
         <div className="relative overflow-hidden">
           <div
-            className="flex transition-transform duration-500 ease-out"
+            className="flex transition-transform duration-500 ease-out w-[100%] md:w-[120%]"
             style={{
               transform: `translateX(-${
                 currentIndex * (100 / getVisibleSlides())
               }%)`,
-              width: `${(testimonials.length / getVisibleSlides()) * 100}%`,
+              // width: "110%",
+              // width: `${(testimonials.length / getVisibleSlides()) * 60}%`,
             }}
           >
             {testimonials.map((testimonial, index) => (
@@ -98,22 +119,37 @@ export default function TestimonialsSection() {
                 style={{ width: `${100 / getVisibleSlides()}%` }}
               >
                 <div className="bg-white text-gray-800 p-4 md:p-6 lg:p-8 rounded-lg h-full">
-                  <div className="flex gap-1 mb-4 md:mb-8">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-4 h-4 md:w-5 md:h-5 ${
-                          i < Math.floor(testimonial.rating)
-                            ? "text-yellow-400 fill-yellow-400"
-                            : i < testimonial.rating
-                            ? "text-yellow-400 fill-yellow-400 opacity-50"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    <Image
+                      src={quotes}
+                      alt={testimonial.author}
+                      className="w-10 h-10 md:w-6 md:h-6"
+                    />
+                    <div className="flex gap-1 ">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-4 h-4 md:w-5 md:h-5 ${
+                            i < Math.floor(testimonial.rating)
+                              ? "text-yellow-400 fill-yellow-400"
+                              : i < testimonial.rating
+                              ? "text-yellow-400 fill-yellow-400 opacity-50"
+                              : "text-gray-300"
+                          }`}
+                        />
+                      ))}
+                    </div>
                   </div>
                   <blockquote className="text-base md:text-lg mb-4 md:mb-6">
-                    "{testimonial.text}"
+                    {testimonial.text}
                   </blockquote>
                   <div className="flex items-center gap-3 md:gap-4">
                     <img
