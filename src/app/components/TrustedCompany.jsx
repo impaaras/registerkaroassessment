@@ -22,7 +22,7 @@ export default function TrustedCompanies() {
       <div className="max-w-7xl mx-auto px-4 py-20">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
             Trusted By Over 100+ Startups and freelance business
           </h1>
         </div>

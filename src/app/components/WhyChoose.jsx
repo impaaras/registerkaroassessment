@@ -10,7 +10,7 @@ import {
 
 export default function WhyChoose() {
   return (
-    <div className="max-w-8xl mx-auto py-20 px-20">
+    <div className=" mx-auto py-20 md:px-20 px-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left Text Section */}
         <div className="lg:pr-12">

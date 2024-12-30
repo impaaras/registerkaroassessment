@@ -2,7 +2,7 @@ import Image from "next/image";
 import teamPhoto from "../images/team.png";
 export function About() {
   return (
-    <section className="py-20 px-20">
+    <section className="py-20 md:px-20 px-6">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-20">
           <div>
@@ -28,7 +28,7 @@ export function About() {
               is looking for solid, reliable, and predictable outcomes.
             </p>
 
-            <button className="bg-[#0A1B44] text-white px-6 py-3 rounded-lg inline-flex items-center gap-2 hover:bg-opacity-90 transition-colors">
+            <button className="bg-[#1C4670] text-white px-6 py-3 rounded-lg inline-flex items-center gap-2 hover:bg-opacity-90 transition-colors">
               Learn More
               <svg
                 className="w-5 h-5"

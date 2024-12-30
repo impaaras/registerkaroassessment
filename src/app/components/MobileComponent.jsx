@@ -2,10 +2,10 @@ import Image from "next/image";
 import mobileImage from "../images/mobile.png";
 export function MobileComponent() {
   return (
-    <section className="bg-[#1C4670] text-white  px-20">
+    <section className="bg-[#1C4670] text-white  md:px-20 px-6 py-6">
       <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-5xl font-bold mb-4">
             Manage Your Services by your Mobile Phone
           </h2>
           <p className="text-gray-300 mb-8">

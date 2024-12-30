@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <main className="bg-gradient-to-br from-white to-gray-50">
+    <main className="bg-gradient-to-br from-white to-gray-50 md:px-10 px-4">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header with Rating */}
         <div className="flex items-center gap-2 mb-8">
@@ -109,17 +109,17 @@ export default function HeroSection() {
               />
 
               {/* Service Pills */}
-              <div className="absolute -right-4 top-4 flex flex-col gap-3 animate-float">
-                <div className="bg-white px-6 py-3 rounded-full shadow-lg">
+              <div className="absolute md:-right-24 -right-14 mr-2 top-4 flex flex-col gap-3 animate-float">
+                <div className="bg-white px-6 py-3 mb-4 rounded shadow-lg">
                   Annual Compliance
                 </div>
-                <div className="bg-white px-6 py-3 rounded-full shadow-lg">
+                <div className="bg-white px-6 py-3 mb-4 rounded shadow-lg">
                   Payroll Services
                 </div>
-                <div className="bg-white px-6 py-3 rounded-full shadow-lg">
+                <div className="bg-white px-6 py-3  mb-4 rounded shadow-lg">
                   Company Formation
                 </div>
-                <div className="bg-white px-6 py-3 rounded-full shadow-lg">
+                <div className="bg-white px-6 py-3 mb-4 rounded shadow-lg">
                   Annual Compliance
                 </div>
               </div>

@@ -63,7 +63,7 @@ const blogPosts = [
 
 export function BlogSection() {
   return (
-    <section className="py-16 px-20">
+    <section className="py-16 md:px-20 px-6">
       <div className="container mx-auto">
         <p className="text-center text-[#F0813C] text-sm mb-2">
           EXPLORE OUR BLOGS
