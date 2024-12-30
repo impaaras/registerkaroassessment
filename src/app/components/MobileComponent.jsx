@@ -2,7 +2,7 @@ import Image from "next/image";
 import mobileImage from "../images/mobile.png";
 export function MobileComponent() {
   return (
-    <section className="bg-[#1C4670] text-white  md:px-20 px-6 py-6">
+    <section className="bg-[#1C4670] text-white  md:px-20 px-6">
       <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-5xl font-bold mb-4">
@@ -36,13 +36,13 @@ export function MobileComponent() {
           </div>
         </div>
 
-        <div className="relative h-[600px] hidden md:block overflow-hidden">
+        <div className="relative h-[500px] hidden md:block overflow-hidden">
           <div className="absolute right-0 top-0">
             <Image
               src={mobileImage}
               width={700}
               height={600}
-              className="object-cover max-w-full max-h-full"
+              className="object-cover max-w-full "
             />
           </div>
         </div>

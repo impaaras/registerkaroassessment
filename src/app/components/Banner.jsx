@@ -78,10 +78,18 @@ export default function Banner() {
           </a>
           <div className="hidden sm:flex space-x-3">
             {/* Social media icons */}
-            <Instagram size={20} />
-            <Facebook size={20} />
-            <Twitter size={20} />
-            <Youtube size={20} />
+            <Link href="/">
+              <Instagram size={20} />
+            </Link>
+            <Link href="/">
+              <Facebook size={20} />
+            </Link>
+            <Link href="/">
+              <Twitter size={20} />
+            </Link>
+            <Link href="/">
+              <Youtube size={20} />
+            </Link>
           </div>
         </div>
       </header>
