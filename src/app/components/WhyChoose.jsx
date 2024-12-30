@@ -32,7 +32,7 @@ export default function WhyChoose() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-red-50 rounded-lg p-6">
               <div className="flex justify-center mb-4">
-                <Shield className="w-12 h-12 text-orange-500" />
+                <ShieldCheck className="w-12 h-12 text-orange-500" />
               </div>
               <h3 className="text-xl font-bold text-center mb-2">
                 Confidential & Safe

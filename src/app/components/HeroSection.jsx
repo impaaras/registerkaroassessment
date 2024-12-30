@@ -15,24 +15,23 @@ export default function HeroSection() {
   return (
     <main className="bg-gradient-to-br from-white to-gray-50 md:px-10 px-4">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header with Rating */}
-        <div className="flex items-center gap-2 mb-8">
-          <Star className="w-5 h-5 text-yellow-400" />
-          <span className="font-medium">Google Rating</span>
-          <div className="flex gap-1">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className="w-4 h-4 fill-yellow-400 text-yellow-400"
-              />
-            ))}
-          </div>
-        </div>
-
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
           <div>
+            {/* Header with Rating */}
+            <div className="flex items-center gap-2 mb-8">
+              <Star className="w-5 h-5 text-yellow-400" />
+              <span className="font-medium">Google Rating</span>
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                  />
+                ))}
+              </div>
+            </div>
             <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
               Your trusted partner
               <br />

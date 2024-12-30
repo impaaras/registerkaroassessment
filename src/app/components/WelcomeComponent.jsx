@@ -47,19 +47,19 @@ export function WelcomeSection() {
         <div className="flex justify-center gap-8 flex-wrap">
           <div className="flex items-center gap-2">
             <div className="bg-white rounded-full">
-              <Check className="text-[#000]" />
+              <Check className="text-[#000] p-1" size={24} />
             </div>
             <span>Instant results</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="bg-white rounded-full">
-              <Check className="text-[#000]" />
+              <Check className="text-[#000] p-1" size={24} />
             </div>
             <span>User-friendly interface</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="bg-white rounded-full ">
-              <Check className="text-[#000]" />
+              <Check className="text-[#000] p-1" size={24} />
             </div>
             <span>Personalized customization</span>
           </div>
