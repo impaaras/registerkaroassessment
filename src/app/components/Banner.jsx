@@ -8,6 +8,10 @@ import {
   PlayCircle,
   Menu,
   X,
+  Instagram,
+  Facebook,
+  Twitter,
+  Youtube,
 } from "lucide-react";
 import Link from "next/link";
 import heroImage from "../images/hero.png";
@@ -74,7 +78,10 @@ export default function Banner() {
           </a>
           <div className="hidden sm:flex space-x-3">
             {/* Social media icons */}
-            {/* ... (keeping your existing social media icons) ... */}
+            <Instagram size={20} />
+            <Facebook size={20} />
+            <Twitter size={20} />
+            <Youtube size={20} />
           </div>
         </div>
       </header>

@@ -32,7 +32,7 @@ export function WelcomeSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter Your Email"
-              className="flex-1 px-4 py-3 rounded-lg text-gray-800"
+              className="flex-1 px-4 py-3 rounded-lg text-gray-800 placeholder:text-gray-500"
               required
             />
             <button
