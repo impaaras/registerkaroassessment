@@ -48,34 +48,34 @@ export default function HeroSection() {
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mb-8">
-              <div>
-                <div className="flex items-center gap-2">
-                  <BarChart3 className="w-6 h-6 " />
-                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] mb-2">
+              <div className="flex items-center gap-2">
+                <BarChart3 className="w-12 h-12 text-[#4F4F4F]" />
+                <div className="flex flex-col">
+                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] ">
                     4.5+
                   </span>
+                  <p className="text-sm text-gray-600">Customer Rating</p>
                 </div>
-                <p className="text-sm text-gray-600">Customer Rating</p>
               </div>
 
-              <div>
-                <div className="flex items-center gap-2">
-                  <Users className="w-6 h-6" />
-                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] mb-2">
+              <div className="flex items-center gap-2">
+                <Users className="w-12 h-12 text-[#4F4F4F]" />
+                <div className="flex flex-col ">
+                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] ">
                     20,000+
                   </span>
+                  <p className="text-sm text-gray-600">Clients</p>
                 </div>
-                <p className="text-sm text-gray-600">Clients</p>
               </div>
 
-              <div>
-                <div className="flex items-center gap-2">
-                  <HandshakeIcon className="w-6 h-6 " />
-                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] mb-2">
+              <div className="flex items-center gap-2">
+                <HandshakeIcon className="w-12 h-12 text-[#4F4F4F]" />
+                <div className="flex flex-col">
+                  <span className="text-2xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#FFA229] via-[#2F5795] to-[#2F5795] ">
                     99.8%
                   </span>
+                  <p className="text-sm text-gray-600">Financial Stability</p>
                 </div>
-                <p className="text-sm text-gray-600">Financial Stability</p>
               </div>
             </div>
 
