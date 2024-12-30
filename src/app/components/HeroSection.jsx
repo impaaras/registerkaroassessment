@@ -84,7 +84,11 @@ export default function HeroSection() {
                 Talk An Expert
               </button>
               <button className="flex items-center space-x-2 text-gray-700 hover:text-orange-500 transition-colors">
-                <PlayCircle className="w-6 h-6" />
+                <PlayCircle
+                  className="w-6 h-6"
+                  color="#FFF"
+                  style={{ backgroundColor: "#FD4E25", borderRadius: "50px" }}
+                />
                 <span>See how it works</span>
               </button>
             </div>
@@ -93,15 +97,9 @@ export default function HeroSection() {
           {/* Right Column - Illustration */}
           <div className="relative">
             <div className="relative">
-              {/* <Image
-                src={heroImage}
-                alt="Business Compliance Illustration"
-                className="w-full h-auto"
-              /> */}
               <Image
                 src={heroImage}
                 alt="Business Compliance"
-                // className="w-full"
                 width={600}
                 height={600}
                 priority
