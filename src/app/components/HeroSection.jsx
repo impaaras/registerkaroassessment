@@ -106,7 +106,7 @@ export default function HeroSection() {
               />
 
               {/* Service Pills */}
-              <div className="absolute md:-right-24 -right-14 mr-2 top-4 flex flex-col gap-3 animate-float">
+              <div className="absolute md:-right-20 -right-14 mr-2 top-4 flex flex-col gap-3 animate-float">
                 <div className="bg-white px-6 py-3 mb-4 rounded shadow-lg">
                   Annual Compliance
                 </div>
