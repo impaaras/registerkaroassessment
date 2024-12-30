@@ -5,14 +5,13 @@ import { Star, Target, Users, Briefcase, PlayCircle } from "lucide-react";
 import Link from "next/link";
 import heroImage from "../images/hero.png";
 import Logo from "../images/logo.png";
-import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 import { ChevronDown } from "lucide-react";
 
 export default function Banner() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="">
       <header className="bg-[#2B4162] text-white py-2">
@@ -118,16 +117,6 @@ export default function Banner() {
         </div>
       </header>
 
-      <button
-        className="block md:hidden"
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-      >
-        {isMobileMenuOpen ? (
-          <X className="w-6 h-6" />
-        ) : (
-          <Menu className="w-6 h-6" />
-        )}
-      </button>
       {/* Navigation */}
       <nav className="bg-white  py-2 relative">
         <div className="container mx-auto px-4 flex justify-between items-center">

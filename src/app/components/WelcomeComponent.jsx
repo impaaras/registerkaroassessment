@@ -15,7 +15,7 @@ export function WelcomeSection() {
   return (
     <section className="relative py-20 px-4">
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[#F0813C] to-[#0A1B44]"
+        className="absolute inset-0 bg-gradient-to-r from-[#FFA229] to-[#1C4670]"
         style={{ zIndex: -1 }}
       />
 
@@ -26,7 +26,7 @@ export function WelcomeSection() {
         </h2>
 
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto mb-8">
-          <div className="flex gap-2">
+          <div className="flex gap-2 bg-white rounded-lg">
             <input
               type="email"
               value={email}
@@ -37,7 +37,7 @@ export function WelcomeSection() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-[#F0813C] text-white rounded-lg font-medium hover:bg-[#E07232] transition-colors"
+              className="px-6 py-3 bg-[#FFA229] text-white rounded font-medium hover:bg-[#E07232] transition-colors"
             >
               Submit
             </button>
@@ -46,15 +46,21 @@ export function WelcomeSection() {
 
         <div className="flex justify-center gap-8 flex-wrap">
           <div className="flex items-center gap-2">
-            <Check className="text-[#F0813C]" />
+            <div className="bg-white rounded-full">
+              <Check className="text-[#000]" />
+            </div>
             <span>Instant results</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="text-[#F0813C]" />
+            <div className="bg-white rounded-full">
+              <Check className="text-[#000]" />
+            </div>
             <span>User-friendly interface</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="text-[#F0813C]" />
+            <div className="bg-white rounded-full ">
+              <Check className="text-[#000]" />
+            </div>
             <span>Personalized customization</span>
           </div>
         </div>

@@ -61,7 +61,7 @@ export default function ClientsSection() {
         </div>
 
         <div className="relative overflow-hidden">
-          <div className="flex gap-8 flex-wrap justify-center">
+          <div className="flex gap-8 flex-wrap ">
             <div
               className={`flex gap-8 flex-wrap justify-center transition-transform duration-700 ${
                 showMore ? "-translate-x-full" : "translate-x-0"

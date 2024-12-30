@@ -69,7 +69,7 @@ export default function ServicesSection() {
               <p className="text-gray-600 mb-6 max-w-sm mx-auto">
                 {service.description}
               </p>
-              <button className="text-blue-900 font-medium inline-flex items-center hover:text-blue-700">
+              <button className="text-[#1c4670] font-medium inline-flex items-center ">
                 Learn more
                 <svg
                   className="w-4 h-4 ml-1"
