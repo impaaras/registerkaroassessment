@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import {
   Circle,
@@ -18,41 +17,56 @@ import {
   Codepen,
   Codesandbox,
   Framer,
-  Twitter,
 } from "lucide-react";
 
 export default function ClientsSection() {
   const [showMore, setShowMore] = useState(false);
 
   const mainLogos = [
-    { Icon: Circle, color: "text-blue-500" },
-    { Icon: Triangle, color: "text-green-500" },
-    { Icon: Square, color: "text-purple-500" },
-    { Icon: Github, color: "text-gray-700" },
-    { Icon: Facebook, color: "text-blue-600" },
-    { Icon: Box, color: "text-orange-500" },
-    { Icon: Layout, color: "text-teal-500" },
-    { Icon: Diamond, color: "text-pink-500" },
+    { Icon: Circle, color: "text-blue-500", position: "top-4 left-8" },
+    { Icon: Github, color: "text-gray-700", position: "top-16 left-32" },
+    { Icon: Facebook, color: "text-blue-600", position: "top-4 left-64" },
+    { Icon: Box, color: "text-orange-500", position: "top-24 left-96" },
+    { Icon: Layout, color: "text-teal-500", position: "top-8 right-96" },
+    { Icon: Diamond, color: "text-pink-500", position: "top-20 right-64" },
+    { Icon: Triangle, color: "text-green-500", position: "top-12 right-32" },
+    { Icon: Square, color: "text-purple-500", position: "top-4 right-8" },
+    { Icon: Github, color: "text-gray-700", position: "bottom-24 left-16" },
+    { Icon: Facebook, color: "text-blue-600", position: "bottom-8 left-48" },
+    { Icon: Box, color: "text-orange-500", position: "bottom-20 left-80" },
+    { Icon: Diamond, color: "text-pink-500", position: "bottom-4 right-80" },
+    { Icon: Triangle, color: "text-green-500", position: "bottom-16 right-48" },
+    { Icon: Square, color: "text-purple-500", position: "bottom-8 right-16" },
+    { Icon: Layout, color: "text-teal-500", position: "top-32 left-1/2" },
+    { Icon: Diamond, color: "text-pink-500", position: "bottom-32 left-1/2" },
   ];
 
   const additionalLogos = [
-    { Icon: Trello, color: "text-blue-400" },
-    { Icon: Slack, color: "text-purple-600" },
-    { Icon: Figma, color: "text-black" },
-    { Icon: Gitlab, color: "text-orange-600" },
-    { Icon: Chrome, color: "text-blue-500" },
-    { Icon: Codepen, color: "text-gray-800" },
-    { Icon: Codesandbox, color: "text-blue-700" },
-    { Icon: Framer, color: "text-black" },
+    { Icon: Trello, color: "text-blue-400", position: "top-8 left-16" },
+    { Icon: Slack, color: "text-purple-600", position: "top-24 left-48" },
+    { Icon: Figma, color: "text-black", position: "top-12 left-80" },
+    { Icon: Gitlab, color: "text-orange-600", position: "top-8 right-80" },
+    { Icon: Chrome, color: "text-blue-500", position: "top-24 right-48" },
+    { Icon: Codepen, color: "text-gray-800", position: "top-12 right-16" },
+    {
+      Icon: Codesandbox,
+      color: "text-blue-700",
+      position: "bottom-24 left-32",
+    },
+    { Icon: Framer, color: "text-black", position: "bottom-8 left-64" },
+    { Icon: Trello, color: "text-blue-400", position: "bottom-20 right-64" },
+    { Icon: Slack, color: "text-purple-600", position: "bottom-8 right-32" },
+    { Icon: Figma, color: "text-black", position: "top-32 left-1/2" },
+    { Icon: Gitlab, color: "text-orange-600", position: "bottom-32 left-1/2" },
   ];
 
   return (
-    <main className="bg-white py-20 px-4">
-      <div className="mx-auto">
-        <div className="text-center mb-20">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+    <div className="bg-white py-20">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Our Happy Clients
-          </h1>
+          </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Professionally cultivate one-to-one customer service with robust
             ideas. Dynamically innovate resource-leveling customer service for
@@ -60,58 +74,92 @@ export default function ClientsSection() {
           </p>
         </div>
 
-        <div className="relative overflow-hidden">
-          <div className="flex gap-8 flex-wrap ">
-            <div
-              className={`flex gap-8 flex-wrap justify-center transition-transform duration-700 ${
-                showMore ? "-translate-x-full" : "translate-x-0"
-              }`}
-            >
-              {mainLogos.map((logo, index) => (
+        <div className="relative h-[300px] overflow-hidden">
+          {/* Main Logos */}
+          <div
+            className={`absolute w-full transition-transform duration-700 ease-in-out ${
+              showMore ? "-translate-x-full" : "translate-x-0"
+            }`}
+          >
+            <div className="relative h-[300px]">
+              {mainLogos.map(({ Icon, color, position }, index) => (
                 <div
                   key={index}
-                  className="transform transition-all duration-500 hover:scale-110"
+                  className={`absolute ${position} transition-all duration-300 hover:scale-110`}
                 >
-                  <div className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl">
-                    <logo.Icon className={`w-12 h-12 ${logo.color}`} />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div
-              className={`absolute top-0 left-0 flex gap-8 flex-wrap justify-center transition-transform duration-700 ${
-                showMore ? "translate-x-0" : "translate-x-full"
-              }`}
-            >
-              {additionalLogos.map((logo, index) => (
-                <div
-                  key={index}
-                  className="transform transition-all duration-500 hover:scale-110"
-                >
-                  <div className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center hover:shadow-xl">
-                    <logo.Icon className={`w-12 h-12 ${logo.color}`} />
+                  <div className="bg-white rounded-full shadow-lg p-4 w-20 h-20 flex items-center justify-center border border-gray-100">
+                    <Icon className={`w-10 h-10 ${color}`} />
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {!showMore && (
-            <div className="text-center mt-12">
-              <button
-                onClick={() => setShowMore(true)}
-                className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors font-medium group"
-              >
-                Show more
-                <span className="transform group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
-              </button>
+          <div
+            className={`absolute w-full transition-transform duration-700 ease-in-out ${
+              showMore ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <div className="relative h-[300px]">
+              {additionalLogos.map(({ Icon, color, position }, index) => (
+                <div
+                  key={index}
+                  className={`absolute ${position} transition-all duration-300 hover:scale-110`}
+                >
+                  <div className="bg-white rounded-full shadow-lg p-4 w-20 h-20 flex items-center justify-center border border-gray-100">
+                    <Icon className={`w-10 h-10 ${color}`} />
+                  </div>
+                </div>
+              ))}
             </div>
-          )}
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-800 transition-colors font-medium"
+          >
+            {showMore ? (
+              <>
+                Show less
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M19 12H5" />
+                  <path d="M12 19l-7-7 7-7" />
+                </svg>
+              </>
+            ) : (
+              <>
+                Show more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </>
+            )}
+          </button>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
